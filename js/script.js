@@ -12,7 +12,7 @@ createApp({
             axios.get("https://flynn.boolean.careers/exercises/api/random/mail").then((response) =>{
                 const result = response.data;
 
-                this.newEmail = result;
+                this.newEmail = result.response;
 
                 console.log(this.newEmail);
             })
